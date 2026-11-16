@@ -16,16 +16,18 @@ public class Funciones1 {
 	public static double longitud (int n1) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("1. millas a kilometros");
-		System.out.println("1. kilometros a millas");
+		System.out.println("2. kilometros a millas");
 		int n = Integer.parseInt(sc.nextLine());
 		
 		switch (n) {
 		case 1: {
-			double formula = n1 * 1.6;
+			int n2 = Integer.parseInt(sc.nextLine());
+			double formula = n2 * 1.6;
 			return formula;
 		}
 		case 2: {
-			double formula1 = n1 * 0.62;
+			int n2 = Integer.parseInt(sc.nextLine());
+			double formula1 = n2 * 0.62;
 			return formula1;
 		
 		}
