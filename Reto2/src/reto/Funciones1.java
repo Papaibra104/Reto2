@@ -1,5 +1,7 @@
 package reto;
 
+import java.util.Scanner;
+
 public class Funciones1 {
 	
 	public static double peso_kg_libras(double n1) {
@@ -12,7 +14,12 @@ public class Funciones1 {
 		return peso2;
 	}
 	public static double longitud (int n1) {
-		switch (n1) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("1. millas a kilometros");
+		System.out.println("1. kilometros a millas");
+		int n = Integer.parseInt(sc.nextLine());
+		
+		switch (n) {
 		case 1: {
 			double formula = n1 * 1.6;
 			return formula;
