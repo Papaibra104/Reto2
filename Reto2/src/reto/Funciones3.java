@@ -16,9 +16,17 @@ public class Funciones3 {
 	}
 	
 	
-	
-	
-	
+	public static double grados_radianes(int n1) {
+		double grados = n1 * Math.PI / 180.0; 
+		
+		return grados;
+	}
+		
+	public static double radianes_grados(int n1) {
+		double radianes = n1 * 180.0 / Math.PI;
+		
+		return radianes;
+	}
 	
 	
 	
